@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="256" viewBox="0 0 160 256">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#09A6C8" stroke-width="10" d="M98.75 87L155 119.6v86.933L80 250 5 206.533V119.6L61.25 87"/>
+        <path fill="#09A6C8" d="M79 0h3v77h5v14H73V77h6V0z"/>
+        <text fill="#131415" font-family="Montserrat-Bold, Montserrat" font-size="21" font-weight="bold" transform="translate(5)">
+            <tspan x="62.123" y="132">05</tspan>
+        </text>
+        <text fill="#131415" font-family="Montserrat-Black, Montserrat" font-size="18" font-weight="700" letter-spacing=".9" transform="translate(5)">
+            <tspan x="26.171" y="174">DEVELOP</tspan>
+        </text>
+    </g>
+</svg>

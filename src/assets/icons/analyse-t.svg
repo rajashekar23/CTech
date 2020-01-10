@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="281" height="336" viewBox="0 0 281 336">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#14BF9E" stroke-width="10" d="M158.75 167L215 199.6v86.933L140 330l-75-43.467V199.6l56.25-32.6"/>
+        <path fill="#14BF9E" d="M139 80h3v77h5v14h-14v-14h6V80z"/>
+        <text fill="#131415" font-family="Montserrat-Bold, Montserrat" font-size="21" font-weight="bold" transform="translate(65 80)">
+            <tspan x="62.26" y="132">03</tspan>
+        </text>
+        <text fill="#131415" font-family="Montserrat-Black, Montserrat" font-size="18" font-weight="700" letter-spacing=".9" transform="translate(65 80)">
+            <tspan x="27.458" y="174">ANALYSE</tspan>
+        </text>
+        <text fill="#131415" font-family="Montserrat-Regular, Montserrat" font-size="12" opacity=".8" transform="translate(-10 -3)">
+            <tspan x="9.138" y="12">It is a long established fact that a reader will be </tspan> <tspan x="16.65" y="30">distracted by the readable content of a page </tspan> <tspan x="71.394" y="48">when looking at its layout.</tspan>
+        </text>
+    </g>
+</svg>

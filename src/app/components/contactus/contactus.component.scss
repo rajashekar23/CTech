@@ -1,0 +1,119 @@
+h2 {
+  text-align: center;
+  color: #0a75be;
+  font-weight: 700;
+}
+h4 {
+  text-align: center;
+  margin: 30px 0;
+  color: #131415;
+  font-size: 31px;
+  opacity: 80%;
+  font-weight: 100;
+}
+input {
+  max-width: 320px;
+  margin: 10px;
+}
+.card {
+  border: none;
+  margin-top: 30px;
+  background-color: #edf3f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  margin: 30px 0;
+  padding: 5px 30px;
+  font-size: 18px;
+  font-weight: 400px;
+  background-color: #edf3f9;
+  border: 1px solid #979797;
+}
+input {
+  color: rgba(23, 22, 22, 0.4);
+  outline: none;
+  border: none;
+  background-color: #edf3f9;
+  border-bottom: 1.5px solid rgba(23, 22, 22, 0.4);
+}
+.contact {
+  margin: 50px 0;
+}
+// $primary: #11998e;
+// $secondary: #38ef7d;
+// $white: #fff;
+// $gray: #9b9b9b;
+// .form__group {
+//   position: relative;
+//   padding: 15px 0 0;
+//   margin-top: 10px;
+//   width: 50%;
+// }
+
+// .form__field {
+//   font-family: inherit;
+//   width: 100%;
+//   border: 0;
+//   border-bottom: 2px solid $gray;
+//   outline: 0;
+//   font-size: 1.3rem;
+//   color: $white;
+//   padding: 7px 0;
+//   background: transparent;
+//   transition: border-color 0.2s;
+
+//   &::placeholder {
+//     color: transparent;
+//   }
+
+//   &:placeholder-shown ~ .form__label {
+//     font-size: 1.3rem;
+//     cursor: text;
+//     top: 20px;
+//   }
+// }
+
+// .form__label {
+//   position: absolute;
+//   top: 0;
+//   display: block;
+//   transition: 0.2s;
+//   font-size: 1rem;
+//   color: $gray;
+// }
+
+// .form__field:focus {
+//   ~ .form__label {
+//     position: absolute;
+//     top: 0;
+//     display: block;
+//     transition: 0.2s;
+//     font-size: 1rem;
+//     color: $primary;
+//     font-weight: 700;
+//   }
+//   padding-bottom: 6px;
+//   font-weight: 700;
+//   border-width: 3px;
+//   border-image: linear-gradient(to right, $primary, $secondary);
+//   border-image-slice: 1;
+// }
+// /* reset input */
+// .form__field {
+//   &:required,
+//   &:invalid {
+//     box-shadow: none;
+//   }
+// }
+// /* demo */
+// body {
+//   font-family: "Poppins", sans-serif;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   font-size: 1.5rem;
+//   background-color: #222222;
+// }
