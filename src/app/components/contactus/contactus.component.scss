@@ -11,109 +11,195 @@ h4 {
   opacity: 80%;
   font-weight: 100;
 }
-input {
-  max-width: 320px;
-  margin: 10px;
-}
+// input {
+//   max-width: 320px;
+//   margin: 10px;
+// }
 .card {
   border: none;
   margin-top: 30px;
   background-color: #edf3f9;
   border-radius: 8px;
+  display: block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 button {
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 5px 30px;
   font-size: 18px;
   font-weight: 400px;
-  background-color: #edf3f9;
+  background-color: #ffffff;
   border: 1px solid #979797;
 }
-input {
-  color: rgba(23, 22, 22, 0.4);
-  outline: none;
-  border: none;
-  background-color: #edf3f9;
-  border-bottom: 1.5px solid rgba(23, 22, 22, 0.4);
-}
+// input {
+//   color: rgba(23, 22, 22, 0.4);
+//   outline: none;
+//   border: none;
+//   background-color: #edf3f9;
+//   border-bottom: 1.5px solid rgba(23, 22, 22, 0.4);
+// }
 .contact {
-  margin: 50px 0;
+  margin: 30px 0;
 }
-// $primary: #11998e;
-// $secondary: #38ef7d;
-// $white: #fff;
-// $gray: #9b9b9b;
-// .form__group {
-//   position: relative;
-//   padding: 15px 0 0;
-//   margin-top: 10px;
-//   width: 50%;
-// }
 
-// .form__field {
-//   font-family: inherit;
-//   width: 100%;
-//   border: 0;
-//   border-bottom: 2px solid $gray;
-//   outline: 0;
-//   font-size: 1.3rem;
-//   color: $white;
-//   padding: 7px 0;
-//   background: transparent;
-//   transition: border-color 0.2s;
+.contain {
+  font-family: "Roboto";
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: block;
+  background: #fff;
+  padding: 10px 30px 30px;
+}
+/* h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+} */
+/* h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+} */
+/* .footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+ */
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 30px;
+}
+input {
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+input:focus {
+  outline: none;
+}
 
-//   &::placeholder {
-//     color: transparent;
-//   }
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 120px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
 
-//   &:placeholder-shown ~ .form__label {
-//     font-size: 1.3rem;
-//     cursor: text;
-//     top: 20px;
-//   }
-// }
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #1c6fdf;
+}
 
-// .form__label {
-//   position: absolute;
-//   top: 0;
-//   display: block;
-//   transition: 0.2s;
-//   font-size: 1rem;
-//   color: $gray;
-// }
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  max-width: 300px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #1c6fdf;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
 
-// .form__field:focus {
-//   ~ .form__label {
-//     position: absolute;
-//     top: 0;
-//     display: block;
-//     transition: 0.2s;
-//     font-size: 1rem;
-//     color: $primary;
-//     font-weight: 700;
-//   }
-//   padding-bottom: 6px;
-//   font-weight: 700;
-//   border-width: 3px;
-//   border-image: linear-gradient(to right, $primary, $secondary);
-//   border-image-slice: 1;
-// }
-// /* reset input */
-// .form__field {
-//   &:required,
-//   &:invalid {
-//     box-shadow: none;
-//   }
-// }
-// /* demo */
-// body {
-//   font-family: "Poppins", sans-serif;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   font-size: 1.5rem;
-//   background-color: #222222;
-// }
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  max-width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #1c6fdf;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #1c6fdf;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #1c6fdf;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 420px) {
+  h4 {
+    font-size: 28px;
+  }
+  label {
+    position: absolute;
+    left: 5px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  input {
+    width: 280px;
+  }
+  .bar {
+    max-width: 300px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 340px) {
+  input {
+    width: 220px;
+  }
+}

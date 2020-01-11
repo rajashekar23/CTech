@@ -5,11 +5,17 @@ p {
   opacity: 80%;
 }
 .aboutus {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 h6 {
   color: #0a75be;
   font-size: 18px;
   padding: 10px;
   font-weight: 600;
+}
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: 28px;
+    padding: 10px 0 0;
+  }
 }
