@@ -17,10 +17,22 @@ h2 {
   line-height: 30px;
 }
 .icon img {
-  width: 125px;
+ width: 125px;
 }
 .para p {
   font-size: 11px;
   line-height: 18px;
   text-align: center;
 }
+
+
+//--------------------for text-img --------------------//
+// .icon img{
+//   width: 240px;
+// }
+// @media (max-width:576px){
+// .icon img{
+//   display: flex;
+// margin: auto;
+// }
+// }
